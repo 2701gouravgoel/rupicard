@@ -49,7 +49,9 @@ function Section2() {
       <div className="content2">
         <div className="contentText">
           <div className="text">
-            <span>1% assured cashback on your spends.</span>
+            <span className="normalText">
+              1% assured cashback on your spends.
+            </span>
             <span className="lightText">
               The more you spend, the more you earn.
             </span>
@@ -68,7 +70,7 @@ function Section2() {
         <img src={fivePercent} className="onePercent" />
         <div className="contentText">
           <div className="text">
-            <span>5x more value than your cashback</span>
+            <span className="normalText">5x more value than your cashback</span>
             <span className="lightText">, only at the Uni Store.</span>
           </div>
         </div>
@@ -77,7 +79,7 @@ function Section2() {
       <div className="content2">
         <div className="contentText">
           <div className="text">
-            <span>Zero Forex Markup.</span>
+            <span className="normalText">Zero Forex Markup.</span>
             <span className="lightText">
               Go international, without any fees.
             </span>
