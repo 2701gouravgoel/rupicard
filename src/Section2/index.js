@@ -1,6 +1,8 @@
 import { useState } from "react";
-import video from "./../videos/bg.mp4";
 import arrow from "./../images/down_arrow.svg";
+import onePercent from "./../images/one_percent_cashback.png";
+import fivePercent from "./../images/five_x_rewards.png";
+import forex from "./../images/forex_globe.png";
 import "./style.css";
 function isNumeric(input) {
   return /^\d+$/.test(input);
@@ -21,7 +23,7 @@ function Section2() {
   };
 
   return (
-    <div className="section">
+    <div className="section2">
       <div class="headingText">
         <p>
           Earn 1% assured cashback
@@ -44,21 +46,45 @@ function Section2() {
         <img alt="down_arrow" src={arrow} loading="lazy" className="arrow" />
       </div>
 
-      <div className="">
-        <div className="text">
-          <div>
+      <div className="content2">
+        <div className="contentText">
+          <div className="text">
             <span>1% assured cashback on your spends.</span>
             <span className="lightText">
               The more you spend, the more you earn.
             </span>
           </div>
-        </div>
-        <div className="info-caption">
-          <div>
-            Not applicable on fuel purchase, rent &amp; wallet transfers, ATM
-            withdrawals &amp; international transactions.
+          <div className="info-caption">
+            <div>
+              Not applicable on fuel purchase, rent &amp; wallet transfers, ATM
+              withdrawals &amp; international transactions.
+            </div>
           </div>
         </div>
+        <img src={onePercent} className="onePercent" />
+      </div>
+
+      <div className="content2 mobile-content">
+        <img src={fivePercent} className="onePercent" />
+        <div className="contentText">
+          <div className="text">
+            <span>5x more value than your cashback</span>
+            <span className="lightText">, only at the Uni Store.</span>
+          </div>
+        </div>
+      </div>
+
+      <div className="content2">
+        <div className="contentText">
+          <div className="text">
+            <span>Zero Forex Markup.</span>
+            <span className="lightText">
+              Go international, without any fees.
+            </span>
+          </div>
+        </div>
+
+        <img src={forex} className="onePercent" />
       </div>
     </div>
   );
